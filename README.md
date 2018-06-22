@@ -1,6 +1,6 @@
 # minas
 
-Mon theme pour shaarli
+Mon thème pour shaarli
 
 -   Modification du thème par défaut.
     
