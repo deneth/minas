@@ -186,12 +186,12 @@
                       <input type="checkbox" class="delete-checkbox" value="{$value.id}">
                     </span>
                     <span class="linklist-item-infos-controls-item ctrl-edit">
-                      <a href="?edit_link={$value.id}" title="{$strEdit}"><i class="fa fa-pencil-square-o edit-link"></i></a>
+                      <a href="?edit_link={$value.id}" title="{$strEdit}"><i class="fa fa-edit edit-link"></i></a>
                     </span>
                     <span class="linklist-item-infos-controls-item ctrl-delete">
                       <a href="?delete_link&amp;lf_linkdate={$value.id}&amp;token={$token}"
                          title="{$strDelete}" class="delete-link pure-u-0 pure-u-lg-visible confirm-delete">
-                        <i class="fa fa-trash"></i>
+                        <i class="fa fa-trash-alt"></i>
                       </a>
                     </span>
                   </div>
@@ -200,7 +200,7 @@
                   {if="!$hide_timestamps || isLoggedIn()"}
                     {$updated=$value.updated_timestamp ? $strEdited. format_date($value.updated) : $strPermalink}
                     <span class="linkdate" title="{$updated}">
-                      <i class="fa fa-clock-o"></i>
+                      <i class="far fa-clock"></i>
                       {$value.created|format_date}
                       {if="$value.updated_timestamp"}*{/if}
                       &middot;
